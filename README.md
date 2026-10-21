@@ -35,3 +35,11 @@ Or if you like running a local server:
 python -m http.server 8080
 ```
 Then go to `http://localhost:8080`.
+
+---
+
+## 🤖 AI Use Declaration
+
+- **AI Assistance:** AI was used only to research and suggest fonts/typography (*VT323*, *Comic Neue*, and *Space Grotesk* from Google Fonts).
+- **Code:** All HTML, CSS, and JavaScript code was fully written by me.
+
