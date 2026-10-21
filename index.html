@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- i hope this viewport thing works on mobile, looked ok on my phone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanshu's StarDance Project ⭐ (Hack Club)</title>
+  
+  <!-- google fonts: VT323 for retro terminal + Comic Neue / Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Space+Grotesk:wght@500;700&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- classic student marquee banner -->
+  <div class="top-marquee">
+    <marquee scrollamount="7">
+      🚨 WELCOME TO PRIYANSHU'S STARDANCE PROJECT SITE! 🚨 &nbsp;&nbsp;&nbsp; 
+      ★ HACK CLUB TECH COMPETITION 2026 ★ &nbsp;&nbsp;&nbsp;
+      STATUS: BREADBOARD IS WORKING (MOSTLY) &nbsp;&nbsp;&nbsp; 
+      PLS VOTE BEFORE HACK CLUB JUDGING ENDS!! &nbsp;&nbsp;&nbsp;
+      LAST EDITED AT 3:42 AM 😴
+    </marquee>
+  </div>
+
+  <div class="container">
+
+    <!-- Navbar made with buttons because router is too hard -->
+    <div class="student-navbar">
+      <span class="nav-brand">🦕 priyanshu.dev/stardance</span>
+      <div class="nav-links">
+        <a href="#about" class="fake-btn">[About Me]</a>
+        <a href="#hardware" class="fake-btn">[The Hardware]</a>
+        <a href="#commits" class="fake-btn">[Git Commits]</a>
+        <a href="#vote" class="fake-btn highlight-btn">[VOTE FOR ME ⭐]</a>
+      </div>
+    </div>
+
+    <!-- Hero Card -->
+    <div class="card hero-box" id="about">
+      <div class="window-bar">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+        <span class="window-title">bash - priyanshu@hackclub-stardance: ~</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="terminal-prompt">&gt; whoami</p>
+          <h1 class="main-heading">Hiii! I'm Priyanshu 👋</h1>
+          <p class="tagline">
+            High school tech guy, terminal lover, and builder for 
+            <span class="highlight">Hack Club's StarDance Competition!</span>
+          </p>
+
+          <p class="bio-text">
+            Welcome to my official project site! I made this page with raw HTML, CSS, and like 10 lines of JavaScript. 
+            No React, no frameworks, just vibes and whatever I remembered from CS class lol.
+          </p>
+
+          <div class="badge-row">
+            <span class="badge badge-red">🔥 HACK CLUB STARDANCE 2026</span>
+            <span class="badge badge-green">🟢 STATUS: CODE RUNS</span>
+            <span class="badge badge-yellow">☕ 4 CANS OF MONSTER</span>
+          </div>
+
+          <div class="button-group">
+            <button onclick="voteForMe()" class="action-btn vote-btn">
+              ⭐ VOTE FOR MY PROJECT (<span id="vote-num">42</span>)
+            </button>
+            <button onclick="sayHi()" class="action-btn hi-btn">
+              👋 Say Hi!
+            </button>
+          </div>
+          <!-- TODO: fix this alignment later idk why it's 2px off -->
+        </div>
+
+        <!-- Photo of desk setup -->
+        <div class="hero-image-wrap">
+          <div class="polaroid-wrapper">
+            <div class="tape-strip"></div>
+            <img src="assets/desk.jpg" alt="Priyanshu's desk with Hack Club stickers and breadboard" class="desk-pic">
+            <p class="photo-caption">
+              My desk at 2:30 AM during StarDance build week 😭<br>
+              <em>(yes those are Cheetos and glowing RGB wires)</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="card" id="hardware">
+      <div class="card-header">
+        <h2>🛠️ What is my StarDance Project?</h2>
+        <span class="card-subtitle">Project codename: <code>"StarDance-Sync-v1.ino"</code></span>
+      </div>
+
+      <div class="project-body">
+        <p>
+          For the <strong>Hack Club StarDance</strong> competition, I wanted to combine 
+          <strong>sound-reactive hardware</strong> with <strong>rhythm synchronization</strong>! 
+          It's an ESP32 microcontroller hooked up to 60 addressable WS2812B LEDs and an electret microphone 
+          that pulses colors to the beat of whatever song is playing.
+        </p>
+
+        <div class="specs-grid">
+          <div class="spec-card">
+            <h4>🧠 Brains</h4>
+            <p>ESP32 NodeMCU (bought with pocket money)</p>
+          </div>
+          <div class="spec-card">
+            <h4>💡 Lights</h4>
+            <p>60x WS2812B RGB NeoPixel Strip</p>
+          </div>
+          <div class="spec-card">
+            <h4>🎧 Sensor</h4>
+            <p>MAX9814 Audio Auto-Gain Mic module</p>
+          </div>
+          <div class="spec-card">
+            <h4>💻 Code</h4>
+            <p>C++ on Arduino IDE + FastLED library</p>
+          </div>
+        </div>
+
+        <br>
+        <div class="student-notes">
+          <p><strong>⚠️ Things that went wrong while building this:</strong></p>
+          <ul>
+            <li>Accidentally reversed 5V and GND on day 1 (smelled like burnt plastic, RIP first diode 🪦)</li>
+            <li>Code crashed whenever the bass hit too hard (fixed by adding a random 1000uF capacitor I found in my drawer)</li>
+            <li>Forgot semicolon on line 42 and stared at screen for 45 minutes</li>
+            <li>~~Sleep 8 hours~~ Drink cold iced coffee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Honest Git Commits Section -->
+    <div class="card" id="commits">
+      <div class="card-header">
+        <h2>📜 Real Git Commit History</h2>
+        <span class="card-subtitle">My actual commits to GitHub for StarDance... pls don't judge</span>
+      </div>
+
+      <div class="commit-log">
+        <div class="commit-row">
+          <span class="commit-hash">a89f10</span>
+          <span class="commit-msg">initial commit</span>
+          <span class="commit-time">5 days ago</span>
+        </div>
+        <div class="commit-row">
+          <span class="commit-hash">c42b91</span>
+          <span class="commit-msg">added microphone sampling code</span>
+          <span class="commit-time">4 days ago</span>
+        </div>
+        <div class="commit-row">
+          <span class="commit-hash">e018a4</span>
+          <span class="commit-msg">WHY ARE THE LEDS FLASHING RED HELP</span>
+          <span class="commit-time">3 days ago</span>
+        </div>
+        <div class="commit-row">
+          <span class="commit-hash">92bc7e</span>
+          <span class="commit-msg">nvm i plugged wire into wrong pin lol</span>
+          <span class="commit-time">3 days ago</span>
+        </div>
+        <div class="commit-row">
+          <span class="commit-hash">5d631f</span>
+          <span class="commit-msg">fix math error in FFT beat detection</span>
+          <span class="commit-time">2 days ago</span>
+        </div>
+        <div class="commit-row">
+          <span class="commit-hash">7fa203</span>
+          <span class="commit-msg">FINAL BUILD FOR STARDANCE SUBMISSION (DO NOT TOUCH)</span>
+          <span class="commit-time">yesterday at 3:18 AM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Checklist / Tech Stack -->
+    <div class="card">
+      <div class="card-header">
+        <h2>📋 The StarDance Submission Checklist</h2>
+      </div>
+      
+      <div class="checklist">
+        <label><input type="checkbox" checked disabled> Hardware assembled on breadboard</label><br>
+        <label><input type="checkbox" checked disabled> Demo video uploaded to YouTube (unlisted for judges)</label><br>
+        <label><input type="checkbox" checked disabled> README.md written with lots of fire emojis 🔥</label><br>
+        <label><input type="checkbox" checked disabled> Slapped Hack Club stickers on the laptop</label><br>
+        <label><input type="checkbox" id="cleanRoomCheck"> Clean up the 20 jumper wires on my floor</label><br>
+        <label><input type="checkbox" id="sleepCheck"> Go to sleep before 4 AM</label>
+      </div>
+
+      <br>
+      <!-- funny toggleable secret box -->
+      <button onclick="toggleSecret()" class="secret-toggle-btn">
+        🔍 Click to view Priyanshu's secret build notes
+      </button>
+
+      <div id="secret-log" style="display: none;" class="secret-box">
+        <p>🤫 <strong>Secret Note:</strong> If Hack Club judges are reading this, I promise the wiring is much safer than it looks on breadboard! Also shoutout to the Hack Club Slack community for helping me debug the FastLED library glitch at 1 AM. You guys rock! 🦕</p>
+      </div>
+    </div>
+
+    <!-- Voting Section -->
+    <div class="card vote-section" id="vote">
+      <div class="center-content">
+        <h2>⭐ Support My StarDance Submission!</h2>
+        <p>If you think this hardware hack is cool, hit the vote button below!</p>
+        
+        <div class="big-vote-box">
+          <button onclick="voteForMe()" class="huge-vote-btn">
+            🌟 CLICK TO VOTE FOR PRIYANSHU! 🌟
+          </button>
+          <p class="vote-stat-text">Total Votes: <strong id="vote-num-2">42</strong></p>
+        </div>
+
+        <p class="vote-disclaimer">
+          (You can click it more than once if you really want me to win the Hack Club sticker pack haha)
+        </p>
+      </div>
+    </div>
+
+    <!-- 88x31 Retro Web Badges -->
+    <div class="badges-88x31">
+      <span class="retro-badge badge-blue">HTML 5 VALID*</span>
+      <span class="retro-badge badge-purple">HACK CLUB 🦕</span>
+      <span class="retro-badge badge-orange">MADE AT 3 AM</span>
+      <span class="retro-badge badge-green">ESP32 POWERED</span>
+      <span class="retro-badge badge-red">NO COOKIES 🍪</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- if I remove this hr tag the whole layout breaks idk why -->
+      <hr>
+      <p>Made with ❤️, HTML, CSS, and zero sleep by <strong>Priyanshu</strong> for Hack Club's StarDance 2026.</p>
+      <p class="footer-small">Built on Windows • Tested on Chrome • Not responsible for melted breadboards ⚡</p>
+      <br>
+      <a href="#top" style="color: #666; font-size: 0.85rem;">[↑ back to top of page]</a>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
