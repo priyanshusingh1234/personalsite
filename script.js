@@ -40,3 +40,5 @@ function sayHi() {
 // funny console message for anyone who opens devtools (Hack Club judges!)
 console.log("Hey! If you are a Hack Club judge inspect-elementing my site... hello!! 👋");
 console.log("Everything here was built by Priyanshu with lots of coffee.");
+
+// small console note
