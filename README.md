@@ -1,47 +1,47 @@
-# Priyanshu's StarDance Site ⭐ (Hack Club)
+# Priyanshu's Personal Portfolio 🚀
 
-Hey! I'm Priyanshu, and this is the personal site I coded for my **StarDance** project submission in Hack Club. 
+Hey everyone! 🙏 I'm Priyanshu, a school student who loves tinkering with code and building cool stuff on the internet.
 
-I made this after finishing my hardware build so people and judges can check out what I made, see my messy desk setup, and drop a vote.
-
----
-
-## 🌐 What's on this site?
-
-- **About Me & Desk Pic:** A quick intro to who I am, plus a candid polaroid of my desk covered in wires, LEDs, Cheetos, and Hack Club stickers at 2:30 AM.
-- **Hardware Breakdown:** Explains my ESP32 sound-reactive LED project with simple cards for the specs and parts I used.
-- **My Real Git Commits:** A terminal-style box showing my actual funny commits (like when I plugged wires into the wrong pins).
-- **Vote Button:** A button that lets anyone vote for my project, adds to a counter, and pops up a quick thank-you alert.
-- **Secret Notes Toggle:** A little button that reveals some extra behind-the-scenes notes about the build when clicked.
-- **Retro Badges & Marquee:** A 90s-style running text banner and 88x31 badges at the bottom because they look cool.
+I built this personal portfolio from scratch using **pure HTML5 & CSS3** (no bulky React, no Tailwind shailwind, just clean raw code). I'm also using this project to teach my juniors and classmates at our school TechFest how to code their first site!
 
 ---
 
-## 🛠️ How I built it
+## ✨ What's on this site?
 
-I didn't use React, Tailwind, or any complicated frameworks. Just:
-- **`index.html`** - Clean structure, funny student comments, and a terminal window look.
-- **`style.css`** - Custom styles with grid paper background, polaroid borders, and Hack Club colors.
-- **`script.js`** - Super basic JavaScript (just a couple functions for the vote counter, alert popups, and the toggle button).
+- **Hero Area:** My profile pic with a neat glow, gradient text, and hover buttons.
+- **Featured Projects:** Responsive cards with glassmorphism built with CSS Grid.
+- **Tech Stack:** Interactive pill badges that lift up on hover.
+- **Connect Section:** Direct links to ping me on GitHub or drop an email.
 
 ---
 
-## 🚀 How to open it
+## 🛠️ Tech Used
 
-You don't need to install anything. Just double-click **`index.html`** and it will open right up in your browser!
+- **HTML5:** Semantic tags (`<header>`, `<section>`, `<article>`, `<ul>`, `<footer>`).
+- **CSS3:** Flexbox, CSS Grid, Glassmorphism, and smooth micro-animations.
+- **Zero Dependencies:** Pure vanilla web — super lightweight, opens instantly.
 
-Or if you like running a local server:
+---
+
+## 🚀 How to Run
+
+Just double-click `index.html` and it will open right up in Chrome or Edge!
+
+Or if you prefer running a quick local server:
 ```bash
-python -m http.server 8080
+python -m http.server 8000
 ```
-Then go to `http://localhost:8080`.
+Then open `http://localhost:8000` in your browser.
 
 ---
 
-## 🤖 AI Use Declaration
+## 📬 Let's Connect!
 
-- **AI Assistance:** AI was used only to research and suggest fonts/typography (*VT323*, *Comic Neue*, and *Space Grotesk* from Google Fonts).
-- **Code:** All HTML, CSS, and JavaScript code was fully written by me.
+- **GitHub:** [@priyanshusingh1234](https://github.com/priyanshusingh1234)
+- **Email:** [kpk22128@gmail.com](mailto:kpk22128@gmail.com)
+
+*Feel free to star ⭐ the repo if you liked it, or fork it to make your own!*
+
 
 
 
