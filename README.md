@@ -1,47 +1,9 @@
-# Priyanshu's Personal Portfolio 🚀
+My name is Priyanshu, and this is my personal portfolio website built with plain HTML and CSS to show my projects and help teach my classmates. The site includes a basic profile section, a grid layout for my featured projects, and contact links, all written from scratch without any frameworks to keep the code simple to read. You can test it by opening the index.html file in your browser, and feel free to reach out to me on GitHub at @priyanshusingh1234 or email at kpk22128@gmail.com.
 
-Hey everyone! 🙏 I'm Priyanshu, a school student who loves tinkering with code and building cool stuff on the internet.
+This site contain images which i took from internet as i am planning to replace them later. On my projects section one card has a bug as it does not redirect to external site . I still could not fix that but i am trying.
 
-I built this personal portfolio from scratch using **pure HTML5 & CSS3** (no bulky React, no Tailwind shailwind, just clean raw code). I'm also using this project to teach my juniors and classmates at our school TechFest how to code their first site!
+I will add more features in this later .
 
----
+Thank you!!
 
-## ✨ What's on this site?
-
-- **Hero Area:** My profile pic with a neat glow, gradient text, and hover buttons.
-- **Featured Projects:** Responsive cards with glassmorphism built with CSS Grid.
-- **Tech Stack:** Interactive pill badges that lift up on hover.
-- **Connect Section:** Direct links to ping me on GitHub or drop an email.
-
----
-
-## 🛠️ Tech Used
-
-- **HTML5:** Semantic tags (`<header>`, `<section>`, `<article>`, `<ul>`, `<footer>`).
-- **CSS3:** Flexbox, CSS Grid, Glassmorphism, and smooth micro-animations.
-- **Zero Dependencies:** Pure vanilla web — super lightweight, opens instantly.
-
----
-
-## 🚀 How to Run
-
-Just double-click `index.html` and it will open right up in Chrome or Edge!
-
-Or if you prefer running a quick local server:
-```bash
-python -m http.server 8000
-```
-Then open `http://localhost:8000` in your browser.
-
----
-
-## 📬 Let's Connect!
-
-- **GitHub:** [@priyanshusingh1234](https://github.com/priyanshusingh1234)
-- **Email:** [kpk22128@gmail.com](mailto:kpk22128@gmail.com)
-
-*Feel free to star ⭐ the repo if you liked it, or fork it to make your own!*
-
-
-
-
+To test it just copy paste html and css in your computer and open html file in web. You see a good web?

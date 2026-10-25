@@ -1,0 +1,128 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px rgb(8, 8, 8);
+}
+
+.ul {
+    display: flex;
+    gap: 209px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    list-style: none;
+
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.first:hover {
+    color: rgba(99, 102, 241, 0.4);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Inherits the black/dark color from the list item */
+}
+
+.main-box {
+    display: flex;
+    background-color: aliceblue;
+    margin: 10px;
+
+}
+
+.hero-image {
+    border-radius: 12px;
+}
+
+.image {
+    object-fit: cover;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.text {
+    line-height: 2rem;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    border-color: rgb(0, 0, 0);
+    margin-top: 140px;
+    margin-left: 100px;
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    background-color: beige;
+    box-shadow: 2px 2px 2px rgb(8, 8, 8);
+}
+
+.btn:hover {
+    font-weight: 1000;
+    transform: scale(1.1);
+    box-shadow: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 20px;
+    color: rgb(134, 129, 129);
+}
+
+.card-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 2px;
+    margin-top: 10px;
+}
+
+.card {
+    box-shadow: 2px 2px 2px rgb(8, 8, 8);
+    margin-bottom: 20px;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    display: flex;
+}
+
+.card-image {
+    width: 450px;
+    height: 350px;
+    padding: 5px;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.card:hover {
+    box-shadow: none;
+}
