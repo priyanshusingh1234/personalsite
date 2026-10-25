@@ -17,14 +17,14 @@ You can run this website on your computer in two simple ways:
 ### Method 1: Direct in Browser (Quickest)
 1. Clone or download this repository to your computer.
 2. Find the `index.html` file in your folder.
-3. Simply double-click `index.html` (or right-click → Open with Chrome / Edge).
+3. Simply double-click `index.html` (or right-click Open with Chrome / Edge).
 4. The website will open immediately with no setup needed!
 
 ### Method 2: Local Server (Optional)
 If you prefer to run a local development server:
 ```bash
 python -m http.server 8000
-```
+`
 Then visit `http://localhost:8000` in your browser.
 
 ---
