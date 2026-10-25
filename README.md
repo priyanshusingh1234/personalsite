@@ -2,7 +2,7 @@ My name is Priyanshu, and this is my personal portfolio website built with plain
 
 ![Personal Site Preview](assets/preview.png)
 
-This site contains images which I took from the internet as I am planning to replace them later.
+This site contain images which i took from internet as i am planning to replace them later. On my projects section one card has a bug as it does not redirect to external site . I still could not fix that but i am trying.
 
 I will add more features in this later .
 
